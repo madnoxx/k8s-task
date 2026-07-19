@@ -22,6 +22,7 @@ spec:
       containers:
         - name: frontend
           image: madnoxx/app-frontend:v1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           volumeMounts:
