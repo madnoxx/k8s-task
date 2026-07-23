@@ -1,1 +1,5 @@
-tls/*.key
+tls/
+build-images.sh
+README.md
+ROLLING_UPDATE_MINDPATH.md
+k8s/
