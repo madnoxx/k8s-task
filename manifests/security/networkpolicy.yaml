@@ -3,7 +3,9 @@ kind: NetworkPolicy
 metadata:
   name: allow-dns
 spec:
-  podSelector: {}
+  podSelector:
+    matchExpressions:
+      - {key: app, operator: In, values: [frontend, backend, postgres]}
   policyTypes:
     - Egress
   egress:
