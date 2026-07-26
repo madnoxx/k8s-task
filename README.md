@@ -8,7 +8,7 @@
     * backend/ - Deployment, Service, ConfigMap, PDB
     * frontend/ - Deployment, Service, ConfigMap, PDB
     * ingress/ - Ingress-ресурс
-    * postgres/ - Cluster
+    * postgres/ - Cluster (CloudNativePG)
     * security/ - NetworkPolicy, RBAC
     * storage/ - StorageClass: NFS и CSI-драйвер
 
@@ -22,7 +22,6 @@
 - NetworkPolicy
 - ServiceAccount и RBAC для backend
 - PodDisruptionBudget для backend и frontend
-- HTTPS на Ingress
 - HashiCorp Vault для управления секретами
 
-Реальные пароли не хранятся в репозитории. Пример команды создания - в manifests/postgres/secret_example.yaml.
+Реальные пароли не хранятся в репозитории. Пример шаблона Secret - в manifests/postgres/secret_example.yaml.
